@@ -1,5 +1,5 @@
 const path = require('path');
-
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 module.exports = {
   entry: './src/index.js',
   output: {
@@ -9,6 +9,9 @@ module.exports = {
     libraryTarget: 'umd',
     libraryExport: 'default'
   },
+  plugins: [
+    new BundleAnalyzerPlugin()
+  ],
   module: {
     rules: [
         {
