@@ -1,12 +1,11 @@
 {
   "name": "fugui-console",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "",
-  "main": "dist/my-console.min.js",
+  "main": "dist/my-console.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --mode=development",
-    "build": "webpack --mode=production -o dist/my-console.min.js"
+    "build": "webpack --mode=production"
   },
   "author": "",
   "license": "ISC",

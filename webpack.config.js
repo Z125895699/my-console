@@ -10,7 +10,7 @@ module.exports = {
     libraryExport: 'default'
   },
   plugins: [
-    new BundleAnalyzerPlugin()
+    // new BundleAnalyzerPlugin()
   ],
   module: {
     rules: [
