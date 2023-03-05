@@ -1,10 +1,11 @@
 const path = require('path');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 module.exports = {
+  mode: 'production',
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'my-console.js', // 修改下输出的名称
+    filename: 'my-console.min.js',
     library: 'MyConsole',
     libraryTarget: 'umd',
     libraryExport: 'default'
